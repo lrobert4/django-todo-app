@@ -3,7 +3,8 @@
 {% block content %}
 
     <div class="col-4 offset-4">
-        <h4>Create a todo</h4>
+        <a href="/" class="btn btn-secondary">Go Home</a>
+        <h4>Update todo</h4>
         <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
